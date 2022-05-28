@@ -11,7 +11,7 @@ def main():
     chart = st.line_chart(last_rows)
 
     for i in range(1, 101):
-        new_rows = last_rows[-1, :] + np.random.randn(5,
+        new_rows = last_rows[-1, :] + np.random.randn(100,
         1).cumsum(axis=0)
         # new_rows = last_rows + np.random.randn(5,
         # 1)
@@ -24,7 +24,7 @@ def main():
     # Streamlit widgets automatically run the script from top to bottom. Since
     # this button is not connected to any other logic, it just causes a plain
     # rerun.
-    st.button("Re-run")
+    # st.button("Re-run")
 
 
 
